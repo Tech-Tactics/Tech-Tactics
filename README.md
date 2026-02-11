@@ -42,12 +42,6 @@
   <img src="https://skillicons.dev/icons?i=kali,ubuntu,linux,git,vscode,cloudflare,ps,md&perline=8" />
 </div>
 
-<img src="https://img.shields.io/badge/JavaScript-000?style=flat&logo=javascript" alt="JavaScript" />
-<img src="https://img.shields.io/badge/TypeScript-000?style=flat&logo=typescript" alt="TypeScript" />
-<img src="https://img.shields.io/badge/Python-000?style=flat&logo=python" alt="Python" />
-<img src="https://img.shields.io/badge/React-000?style=flat&logo=react" alt="React" />
-
-
 <br/>
 <hr/>
 
