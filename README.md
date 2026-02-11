@@ -37,42 +37,23 @@
       src="https://img.shields.io/badge/Email-0072C6?style=for-the-badge&logo=microsoftoutlook&logoColor=white"
       alt="Email"
     />
+  </a>  
+</div>
+
+<div align="center">
+  <a href="mailto:jblack@josephblack.net">
+    <img src="https://img.shields.io/badge/EMAIL-0072C6?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email" />
   </a>
-
-  <!-- External links: open in new tab, add rel for security -->
-  <a
-    href="https://linkedin.com/in/blackjoseph"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn profile"
-  >
-    <img
-      src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-      alt="LinkedIn"
-    />
+  <a href="https://linkedin.com/in/blackjoseph" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-
-  <a
-    href="https://josephblack.net"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Personal website"
-  >
-    <img
-      src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=todoist&logoColor=white"
-      alt="Website"
-    />
+  <a href="https://josephblack.net" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/WEBSITE-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Website" />
   </a>
-
-
-
-    
 </div>
 
 
-
-
- <hr/>
+<hr/>
  
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <br/>
