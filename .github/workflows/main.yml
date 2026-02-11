@@ -1,77 +1,42 @@
-# Generates the "snake" animation (SVG/GIF) from your GitHub contribution graph
-# and commits the generated files to a separate branch named "output".
-
 name: Generate Snake
 
 on:
-  # Run automatically every 12 hours (UTC).
   schedule:
     - cron: "0 */12 * * *"
-
-  # Allow manual runs from the Actions tab.
   workflow_dispatch:
-
-  # Also run whenever you push commits to the main branch.
   push:
     branches:
       - main
 
-# Limit what the built in GITHUB_TOKEN can do.
-# This workflow needs to write commits to the repo (to the "output" branch).
 permissions:
   contents: write
 
-# Prevent overlapping runs (for example, if a scheduled run starts while a push run is still going).
 concurrency:
   group: snake-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
-    # Use a GitHub hosted Linux runner.
     runs-on: ubuntu-latest
-
     steps:
-      # Check out the repository so the workflow can read files and generate output.
-      # Pin this to a specific commit SHA for supply chain safety.
       - name: Clone repo
-        uses: actions/checkout@<PINNED_SHA>
+        uses: actions/checkout@v4
         with:
-          # Avoid leaving a persisted token in the git config from the checkout step.
-          # We will provide the token only to the steps that actually need it.
           persist-credentials: false
 
-      # Generate snake animation assets into the dist/ folder.
-      # Pin this to a specific commit SHA for supply chain safety.
-      - name: Generate the snake files in './dist/'
-        uses: Platane/snk@<PINNED_SHA>
-        id: snake-gif
+      - name: Generate snake assets into dist/
+        uses: Platane/snk@v3
         with:
-          # Use the repository owner as the username for the contribution graph.
           github_user_name: ${{ github.repository_owner }}
-
-          # Files to generate. These paths land under dist/.
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=blue&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-        env:
-          # Built in token scoped by the permissions block above.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Publish dist/ to a separate branch so your main branch stays clean.
-      # Pin this to a specific commit SHA for supply chain safety.
-      - name: Push new files to the output branch
-        uses: crazy-max/ghaction-github-pages@<PINNED_SHA>
+      - name: Publish dist/ to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
-          # The branch that will receive the generated files.
           target_branch: output
-
-          # The folder to publish from the workspace.
           build_dir: dist
-
-          # Commit message shown in the output branch history.
           commit_message: Update snake animations
         env:
-          # Token used to push commits to the output branch.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
