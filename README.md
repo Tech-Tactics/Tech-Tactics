@@ -37,8 +37,9 @@
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=github,react,nextjs,html,vscode,nodejs,python,javascript,typescript,c,java" /> <br>
-    <img src="https://skillicons.dev/icons?i=python,kali,ubuntu,mint,linux,vim,gatsby,cloudflare,vercel,pycharm,photoshop,markdown,," /><br>
+  <img src="https://skillicons.dev/icons?i=github,react,nextjs,html,css,js,ts,python,c,java&perline=10" />
+  <br/>
+  <img src="https://skillicons.dev/icons?i=kali,ubuntu,linux,git,vscode,cloudflare,ps,md&perline=8" />
 </div>
 
 <br/>
@@ -57,8 +58,8 @@
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
 <div align=center>
-  <img width=390 src="https://streak-stats.demolab.com/?user=Tech-Tactics&theme=react&border_radius=10" alt="streak stats"/>
-  <img width=390 src="https://tech-tactics-stats.vercel.app/api?username=Tech-Tactics&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=Tech-Tactics&theme=react&border_radius=10" alt="streak stats" />
+  <img height="165" src="https://tech-tactics-stats.vercel.app/api?username=Tech-Tactics&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
   <br/>
   <img width=325 align="center" src="https://tech-tactics-stats.vercel.app/api/top-langs/?username=Tech-Tactics&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
 </div>
