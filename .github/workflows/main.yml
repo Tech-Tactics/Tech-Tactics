@@ -1,42 +1,63 @@
+# Workflow name shown in the GitHub Actions UI.
 name: Generate Snake
 
+# Triggers: when this workflow should run.
 on:
+  # Scheduled runs use UTC time.
+  # This cron runs at minute 0, every 12th hour (00:00, 12:00 UTC) every day.
   schedule:
     - cron: "0 */12 * * *"
+
+  # Allows you to click "Run workflow" from the Actions tab.
   workflow_dispatch:
+
+  # Runs on every push to the main branch.
+  # This is useful when you edit README, workflow files, or want a fresh snake right away.
   push:
     branches:
       - main
 
+# Permissions granted to the built in GITHUB_TOKEN for this workflow only.
+# Principle: least privilege.
+# contents: write is required because we commit and push generated files to the "output" branch.
 permissions:
   contents: write
 
+# Concurrency prevents multiple overlapping runs.
+# Example: you push twice quickly, or a scheduled run overlaps a manual run.
+# group uses the git ref so different branches would not block each other.
 concurrency:
   group: snake-${{ github.ref }}
+  # If a new run starts, cancel any older run still in progress.
   cancel-in-progress: true
 
 jobs:
+  # A job is a set of steps that run on the same runner machine.
   build:
+    # GitHub hosted Linux VM. "ubuntu-latest" is maintained by GitHub and updates over time.
     runs-on: ubuntu-latest
+
     steps:
+      # Step 1: Check out (clone) the repository contents into the runner workspace.
+      # Without this, actions that read or write files in your repo cannot operate.
       - name: Clone repo
         uses: actions/checkout@v4
         with:
+          # By default, checkout will configure git credentials so later steps can push.
+          # We set this false to avoid leaving credentials in git config unnecessarily.
+          # We will instead provide the token only to the publishing step that needs it.
           persist-credentials: false
 
+      # Step 2: Generate the snake images.
+      # Platane/snk reads contribution data for the specified user and produces image assets.
+      # It writes the generated files into the paths you list under outputs.
       - name: Generate snake assets into dist/
         uses: Platane/snk@v3
         with:
+          # The username whose contribution graph will be used.
+          # github.repository_owner evaluates to the account that owns this repo.
           github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Publish dist/ to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-          commit_message: Update snake animations
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # outputs controls both file names and output formats.
+          # Each line is one output file to generate.
+          # Because we later publish dist/, these files end up at the root of the output branch.
