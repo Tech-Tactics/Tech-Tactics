@@ -20,15 +20,15 @@
 
  </div>
  
-<div align="center"> 
-  <a href="mailto:jblack@josephblack.net">
-    <img src="https://img.shields.io/badge/Outlook-0072C6?style=for-the-badge&logo=gmail&logoColor=white" />
+<div align="center">
+  <a href="https://linkedin.com/in/blackjoseph">
+    <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://linkedin.com/in/blackjoseph" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
+  <a href="https://josephblack.net">
+    <img src="https://img.shields.io/badge/WEBSITE-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Website" />
   </a>
-  <a href="https://josephblack.net" target="_blank">
-     <img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank" /> <!-- sqlite, safari, google-chrome are other good icon options -->
+  <a href="https://www.credly.com/users/joseph-black.e2a7317b">
+    <img src="https://img.shields.io/badge/CREDLY-FF6A00?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" />
   </a>
 </div>
 
