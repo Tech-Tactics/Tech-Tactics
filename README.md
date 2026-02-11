@@ -22,7 +22,7 @@
  
 <div align="center"> 
   <a href="mailto:jblack@josephblack.net">
-    <img src="https://img.shields.io/badge/Outlook-333333?style=for-the-badge&logo=gmail&logoColor=red" />
+    <img src="https://img.shields.io/badge/Outlook-0072C6?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://linkedin.com/in/blackjoseph" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
@@ -37,7 +37,7 @@
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=github,react,nextjs,html,vscode,nodejs,python,javascript,typescript,c,java" />
+    <img src="https://skillicons.dev/icons?i=github,react,nextjs,html,vscode,nodejs,python,javascript,typescript,c,java" /> <br>
     <img src="https://skillicons.dev/icons?i=python,kali,ubuntu,mint,linux,vim,gatsby,cloudflare,vercel,pycharm,photoshop,markdown,," /><br>
 </div>
 
