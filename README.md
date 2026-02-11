@@ -30,10 +30,8 @@
   <a href="https://josephblack.net" target="_blank">
      <img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank" /> <!-- sqlite, safari, google-chrome are other good icon options -->
   </a>
-</div>
 
-<div align="center">
-  <!-- Email: mailto opens the user's default mail app, no target needed -->
+ <!-- Email: mailto opens the user's default mail app, no target needed -->
   <a href="mailto:jblack@josephblack.net" aria-label="Email Joseph Black">
     <img
       src="https://img.shields.io/badge/Email-0072C6?style=for-the-badge&logo=microsoftoutlook&logoColor=white"
@@ -65,7 +63,13 @@
       alt="Website"
     />
   </a>
+
+
+
+    
 </div>
+
+
 
 
  <hr/>
