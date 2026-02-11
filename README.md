@@ -28,7 +28,7 @@
     <img src="https://img.shields.io/badge/WEBSITE-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Website" />
   </a>
   <a href="https://www.credly.com/users/joseph-black.e2a7317b">
-    <img src="https://img.shields.io/badge/CREDLY-FF6A00?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" />
+    <img src="https://img.shields.io/badge/CREDLY-009B7D?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" />
   </a>
 </div>
 
