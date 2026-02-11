@@ -32,6 +32,42 @@
   </a>
 </div>
 
+<div align="center">
+  <!-- Email: mailto opens the user's default mail app, no target needed -->
+  <a href="mailto:jblack@josephblack.net" aria-label="Email Joseph Black">
+    <img
+      src="https://img.shields.io/badge/Email-0072C6?style=for-the-badge&logo=microsoftoutlook&logoColor=white"
+      alt="Email"
+    />
+  </a>
+
+  <!-- External links: open in new tab, add rel for security -->
+  <a
+    href="https://linkedin.com/in/blackjoseph"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn profile"
+  >
+    <img
+      src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+      alt="LinkedIn"
+    />
+  </a>
+
+  <a
+    href="https://josephblack.net"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Personal website"
+  >
+    <img
+      src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=todoist&logoColor=white"
+      alt="Website"
+    />
+  </a>
+</div>
+
+
  <hr/>
  
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
