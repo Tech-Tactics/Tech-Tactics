@@ -58,8 +58,8 @@
 <br>
 <div align=center>
  <img width="390" src="https://streak-stats.demolab.com/?user=Tech-Tactics" alt="streak stats" />
-<img width="390" src="https://github-readme-stats.vercel.app/api?username=Tech-Tactics&show_icons=true" alt="readme stats" />
-<img width="325" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tech-Tactics&layout=compact" alt="top langs" />
+<img width="390" src="https://tech-tactics-stats.vercel.app/api?username=Tech-Tactics&show_icons=true&rank_icon=github&theme=react&bg_color=00000000" alt="readme stats" />
+<img width="325" src="https://tech-tactics-stats.vercel.app/api/top-langs/?username=Tech-Tactics&layout=compact&langs_count=6&theme=react&bg_color=00000000" alt="top langs" />
 
 </div>
 
