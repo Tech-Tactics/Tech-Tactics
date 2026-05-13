@@ -46,10 +46,10 @@
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
 <div align=center>
-  <img height="165" src="https://streak-stats.demolab.com/?user=Tech-Tactics&theme=react&border_radius=10" alt="streak stats" />
-  <img height="165" src="https://tech-tactics-stats.vercel.app/api?username=Tech-Tactics&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10&v=2" alt="readme stats" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=Tech-Tactics&theme=github_dark&border_radius=10" alt="streak stats" />
+  <img height="165" src="https://tech-tactics-stats.vercel.app/api?username=Tech-Tactics&count_private=true&show_icons=true&theme=github_dark&rank_icon=github&border_radius=10&v=2" alt="readme stats" />
   <br/>
-  <img width=325 align="center" src="https://tech-tactics-stats.vercel.app/api/top-langs/?username=Tech-Tactics&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats&v=2" alt="top langs" />
+  <img width=325 align="center" src="https://tech-tactics-stats.vercel.app/api/top-langs/?username=Tech-Tactics&hide=HTML&langs_count=8&layout=compact&theme=github_dark&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats&v=2" alt="top langs" />
 </div>
 <br/><br/>
 <hr/>
