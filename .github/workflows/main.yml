@@ -7,10 +7,8 @@ on:
   # This cron runs at minute 0, Sunday at 03:00 UTC, once per week.
   schedule:
     - cron: "0 3 * * 0"
-
   # Allows you to click "Run workflow" from the Actions tab.
   workflow_dispatch:
-
   # Runs on every push to the main branch.
   # This is useful when you edit README, workflow files, or want a fresh snake right away.
   push:
@@ -36,7 +34,6 @@ jobs:
   build:
     # GitHub hosted Linux VM. "ubuntu-latest" is maintained by GitHub and updates over time.
     runs-on: ubuntu-latest
-
     steps:
       # Step 1: Check out (clone) the repository contents into the runner workspace.
       # Without this, actions that read or write files in your repo cannot operate.
@@ -57,7 +54,26 @@ jobs:
           # The username whose contribution graph will be used.
           # github.repository_owner evaluates to the account that owns this repo.
           github_user_name: ${{ github.repository_owner }}
-
           # outputs controls both file names and output formats.
           # Each line is one output file to generate.
+          # The first line generates the default light-mode snake SVG.
+          # The second line generates a dark-mode variant using GitHub's dark palette.
           # Because we later publish dist/, these files end up at the root of the output branch.
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Step 3: Push the generated files to the "output" branch.
+      # This uses crazy-max/ghaction-github-pages to force-push the contents of dist/
+      # to a separate branch called "output", keeping the main branch clean.
+      # The GITHUB_TOKEN is the built-in token provided by GitHub Actions automatically.
+      # No additional secrets or PATs are needed for this step.
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          # The branch where the generated SVG files will be committed.
+          target_branch: output
+          # The directory containing the files to publish.
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
